@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pong</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        font-family: Consolas, sans-serif;
+      }
+      h1{
+        margin: 20px 0;
+      }
+      canvas{
+        background: #eee;
+        margin: auto;
+        display: block;
+      }
+      .container{
+        box-sizing: border-box;
+        margin: auto;
+        width: 640px;
+      }
+      button{
+        padding: 10px;
+      }
+      p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+      }
+      #announcer{
+        color: black;
+      }
+    </style>
+    <script src='main.js' defer></script>
+  </head>
+
+  <body>
+    <div class='container'>
+      <h1>P0NG.JS</h1>
+      <canvas id='pong-canvas' height='480' width='640'></canvas>
+      <p id='announcer'>Press 'Start Game' to begin.</p>
+      <p>P1: <span id='player-one'>0</span></p>
+      <p>P2: <span id='player-two'>0</span></p>
+      <button class='stop'>Start Game</button>
+      <button class='reset'>Reset Game</button>
+      <p>Controls:</p>
+      <p>P1: Press W to move up, press S to move down.</p>
+      <p>P2: Press Up Arrow to move up, press Down Arrow to move down.</p>
+    </div>
+  </body>
+</html>
